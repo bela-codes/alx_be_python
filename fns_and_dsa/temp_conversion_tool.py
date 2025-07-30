@@ -18,6 +18,8 @@ if unit == "c":
 elif unit == "f":
     converted = convert_to_celsius(measurement)
     print(f"{measurement}°F is {converted}°C")
+else:
+    print("Please choose between 'C' for Celsius or 'F' for Fahreneit.")
 
 # FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 # CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
