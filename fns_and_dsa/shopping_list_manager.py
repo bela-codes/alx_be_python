@@ -15,13 +15,16 @@ def view_list():
     else:
         print("Your shopping list is empty.")
 
+def display_menu():
+    print("Shopping List Manager")
+    print("1. Add item")
+    print("2. Remove item")
+    print("3. View shopping list")
+    print("4. Exit")
+
 def main():
     while True:
-        print("\nShopping List Manager:")
-        print("1. add an item")
-        print('2. remove an item')
-        print("3. view the list")
-        print("4. exit")
+        display_menu()
 
         user_option = input("Enter your choice (1, 2, 3, 4): ")
 
