@@ -12,14 +12,17 @@ def convert_to_fahrenheit(celsius):
 measurement = int(input("Enter the temperature to convert: "))
 unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower()
 
-if unit == "c":
-    converted = convert_to_fahrenheit(measurement)
-    print(f"{measurement}°C is {converted}°F")
-elif unit == "f":
-    converted = convert_to_celsius(measurement)
-    print(f"{measurement}°F is {converted}°C")
-else:
-    print("Please choose between 'C' for Celsius or 'F' for Fahreneit.")
+try:
+    if unit == "c":
+        converted = convert_to_fahrenheit(measurement)
+        print(f"{measurement}°C is {converted}°F")
+    elif unit == "f":
+        converted = convert_to_celsius(measurement)
+        print(f"{measurement}°F is {converted}°C")
+    else:
+        print("Please choose between 'C' for Celsius or 'F' for Fahreneit.")
+except ValueError:
+    print("Invalid temperature. Please enter a numeric value.")
 
 # FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 # CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
