@@ -29,7 +29,7 @@ def main():
         choice = int(input("Enter your choice (1, 2, 3, 4): "))
 
         if choice == 1:
-            item_name = input("Enter the name of the item: ").lower()
+            item_name = input("Enter the item to add: ").lower()
             add_item(item_name)
         elif choice == 2:
             item_name = input("Enter the name of the item: ").lower()
