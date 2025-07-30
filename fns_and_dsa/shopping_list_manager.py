@@ -26,20 +26,20 @@ def main():
     while True:
         display_menu()
 
-        user_option = input("Enter your choice (1, 2, 3, 4): ")
+        user_option = int(input("Enter your choice (1, 2, 3, 4): "))
 
-        if user_option == "1":
+        if user_option == 1:
             item_name = input("Enter the name of the item: ").lower()
             add_item(item_name)
-        elif user_option == "2":
+        elif user_option == 2:
             item_name = input("Enter the name of the item: ").lower()
             if item_name in shopping_list:
                 remove_item(item_name)
             else:
                 print(f"the item- {item_name} is not found.")
-        elif user_option == "3":
+        elif user_option == 3:
             view_list()
-        elif user_option == "4":
+        elif user_option == 4:
             exit()
         else:
             print("Invalid choice. Please enter a valid option.")
