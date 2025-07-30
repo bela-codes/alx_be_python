@@ -10,11 +10,11 @@ def perform_operation(num1, num2, operation):
         result = num1 * num2
         return result
     elif operation == "divide":
-        try:
+        if num2 == 0:
+            print("You Cannot Divide by ZERO!")
+        else:
             result = num1 / num2
             return result
-        except ZeroDivisionError:
-            return print("You can't divide by ZERO!")
     else:
         return print("please choose a valid operator!")
 
