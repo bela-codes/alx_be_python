@@ -9,8 +9,8 @@ def convert_to_fahrenheit(celsius):
     fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
     return fahrenheit
 
-measurement = int(input("Enter the magnitude of your measurement: "))
-unit = input("Is this temprature in Celsius or Fahrenheit? (C/F): ").lower()
+measurement = int(input("Enter the temperature to convert: "))
+unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower()
 
 if unit == "c":
     converted = convert_to_fahrenheit(measurement)
